@@ -3,7 +3,7 @@ All files related to the reMapped transportation project
 
 Initial application document:
 
-**1.	What problem are you trying to solve OR the subject area you're interested in exploring? What kind of questions are getting asked?
+**1.	What problem are you trying to solve OR the subject area you're interested in exploring? What kind of questions are getting asked?**
 
 According to the World Bank, the world’s urban population was roughly 54% in 2014 and has been steadily increasing since the World Bank first began collecting data on urban population in 1960. As people become more concentrated in metropolitan areas, adaptive and efficient transportation becomes increasingly valuable. Cities must ensure that citizens do not spend excessive amounts of time in transit. 
 
@@ -18,7 +18,7 @@ However, the data currently being analyzed provides an incomplete model of rider
 This analysis and data collection has the potential to better optimize the efficiency of the shuttles. In doing such a project, The University of Chicago could become a model for what good, efficient transit can be.
 
 
-**2.	How do people currently address the problem?
+**2.	How do people currently address the problem?**
 
 While novel transit solutions are constantly being innovated, the goal of an effective transit system is more or less consistent: to provide a system that maximizes ridership and mobility within the area and minimizes travel time and system expenditures. Achieving this goal, in the context of creating a bus system, begins with developing a macroscopic understanding of the city. This means collecting data on the properties of the city that imply needing access to public transportation, such as the location and statistics on dense housing neighborhoods, shopping and job centers, and popular sights and destinations. Using this data, a rough model for the necessities of the system can be mapped out and used to approximate general locations in which buses will travel between. 
 
@@ -29,7 +29,7 @@ However, it is important to recognize that making these decisions requires the c
 If ridership trends were predictable, it is intuitive that transit authorities would not want to wait until the discrepancy in ridership and expectations hits a certain threshold to adapt routes and stops to meet transit needs. Therefore, when transit agencies create their systems, approximated models of the city up to 25 years in advance are kept in mind. The reason is that making alterations to routes, even if they improve the efficiency of the system, have the potential to decrease ridership in the short term as individuals adjust to the new routes. Therefore, by designing the system with the long-term future of the city in mind, transit agencies are able to better minimize the amount of large scale system changes that will be necessary.
 
 
-**3.	Who are the experts that weigh in to answer questions or uncover relevant information from available information?
+**3.	Who are the experts that weigh in to answer questions or uncover relevant information from available information?**
 
 Improving transit and increasing the mobility within a city is an immensely complex issue and requires the expertise of a multitude of disciplines. For example, knowledge of city planning and urban development is necessary to ensure that the transit system is adapting to changes within the city and is correctly allocating resources to various locations. Additionally, traffic engineers are necessary to plan routes that will be efficient and avoid being inhibited by traffic as much as possible, while still maximizing ridership. 
 
@@ -40,7 +40,7 @@ Additionally, computer scientists are becoming increasingly vital to optimizatio
 Singapore, with the help of the A-STAR Institute of High Performance Computing, has already applied machine learning models to the dataset of one week of transit rides to prove that the distribution of amenities further from the ‘central business district’ would increase public transit use. In this study, Singapore employed the use of machine learning to aid in their decision-making with regards to large city planning projects, such as their goal to spread out regional business centers, instead of relying solely on a singular central business district. Similar techniques could be applied to the ridership data in Chicago to help make decisions in planning the city for the future. 
 
 
-**4. What computer systems/tools, if any, are currently being used to help address the problem? 
+**4. What computer systems/tools, if any, are currently being used to help address the problem?**
 
 In the case of many metropolitan areas, municipalities and transit authorities are increasingly becoming aware of the value of data collection. It is rare to find a transit system that solely relies on manual data collection. Many cities use a swipe system, such as the Ventra card or our ID system for housing, dining halls, libraries, and shuttles. Cities utilize this ridership data to make decisions on changing bus routes and finding creative solutions to improve mobility within the city.
 
@@ -49,7 +49,7 @@ In 2015, the City of Houston underwent dramatic changes in their Metro system. T
 Chicago, too, has ridership data publicly available and has almost all data since 2001, which is uploaded onto the data.cityofchicago.org website. Having data across this large of a time-span is quite incredible and useful for understanding ridership trends through a multitude of time scopes. With over a decade of data, it would be apparent that certain trends occur on different time cycles. For example, each year, ridership all throughout Chicago increases dramatically for Lollapalooza, which would be recognized as a trend that occurs on a yearly basis. Additionally, with the ridership data backing up this trend, the transit agency would be able to prepare for the dramatic increase in ridership, especially near Grant Park. 
 
 
-**5. What data underpins the expertise or system/tool capabilities? 
+**5. What data underpins the expertise or system/tool capabilities?**
 
 The data that is important in creating and maintaining a transit system is acquired from a multitude of sources. For example, when creating the baseline macroscopic perspective of the city, real estate sales, economic activity, new building developments, and median income would all be useful. Real estate sales would reflect housing trends in the city, economic activity would have a correlation to the amount of foot traffic in the area, and new building developments would imply how the area is changing and whether the area is becoming increasingly industrial or not. The traffic data throughout the city is also important in designing routes that maximize ridership and minimize travel time. 	
 
@@ -58,7 +58,7 @@ However, the ridership data is most important resource available to transit agen
 These sources of data are all used to enhance and more accurately represent a model of the city and the transit needs of the city’s citizens.
 
 
-**6. Is the data structured e.g., tabular data, unstructured e.g., free form text, or both?
+**6. Is the data structured e.g., tabular data, unstructured e.g., free form text, or both?**
 
 The data that would be recorded and used in developing an efficient transit system would come from multiple sources, which presents a challenge in converting each data source into a single uniform dataset. 
 
@@ -68,7 +68,7 @@ Overall, data useful to improving a transit system exists in all the above forma
 Chicago’s public transportation.
 
 
-**7. What makes the problem especially difficult to address?
+**7. What makes the problem especially difficult to address?**
   
 There are two major obstacles in accomplishing and finishing this project. Since I am proposing to log the location of the bus upon the entry and exit of a rider, there are inherent privacy concerns that must be addressed. However, there are ways to safely and non-intrusively record and analyze this data. 
 
@@ -77,20 +77,20 @@ Many individuals, including myself, have privacy concerns when location data is 
 The second obstacle is my needing to learn more about machine learning, programming, and computational statistical analysis so that I will be able to contribute and accomplish this project. I am hoping that I will be able to learn more as I progress through the project. 
 
 
-**8. How might this problem area be improved by a cognitive approach? 
+**8. How might this problem area be improved by a cognitive approach?**
 
 A cognitive approach refers to pattern recognition, which is very similar to what an adaptive algorithm is. Machine learning is based around the idea that computers can be made more efficient through pattern analysis and recognition. For example, a machine learning algorithm applied to shuttle ridership data would recognize that shuttle ridership is heightened during Finals week, as more people are staying up late at the library. Recognizing this beforehand, we would be able to apply this to future finals weeks and hire more drivers specifically during these times. As stated, the use of a ‘cognitive approach’ would allow the data analysis to be expedited as far less manual labor would be done on compiling and analyzing data. Building a system that is reliant on being adaptive is also more future-proof than more static systems that are not capable of tracking ridership patterns and inferring usage from past data.
 
 Additionally, as the University of Chicago expands and grows increasingly further from the main quad, recognizing specific areas of growth will be crucial in development of new transportation solutions, including new shuttle routes. For example, once the new Polsky Center for Entrepreneurship and Innovation opens, there will be a larger group of individuals needing transport between the main campus and the new location. Applying machine learning algorithms on this ridership data will be especially important in the months after the Center opens so that the routes and frequency of buses can be calibrated and optimized. 
 
 
-**9.	Describe one or more real-life scenarios for your application. Be expansive.
+**9.	Describe one or more real-life scenarios for your application. Be expansive.**
   
 While this project would directly affect University affiliates, machine learning principles could be applied to any transit system and, after some time, would result in improvements. The reason that there is a high probability for increased mobility and transit efficiency in a transit system is that a machine learning algorithm could better take all past data into account to predict future ridership. A person would be unable to do this, as the sheer quantity of data being produced is too large for a human to correctly recognize all the trends in the data. 
 
 The City of Chicago should use machine learning algorithms to analyze data produced by CTA busses. Chicago would be especially suited to transit route alterations as the cost of rerouting busses is minimal compared to that of the subway or the “L”. Furthermore, the route alterations could be made gradually, as opposed to the dramatic alterations made in the City of Houston, which would easy transit riders into the new bus system and would mitigate the possible short-term ridership losses, like those experienced in Houston. 
 
 
-**10. Who will benefit from a solution to the problem?
+**10. Who will benefit from a solution to the problem?**
 
 University affiliates would benefit directly from this project, however, if it is shown that increased ridership and improved bus routes is a result of applying machine learning principles to transit ridership data, cities all over the world could benefit. If the City of Chicago were to adopt the application of machine learning to their system and ridership increased, traffic would decrease as more people started preferring public transportation over cars. By increasing mobility within the city, citizens are more likely to travel around the city, which would naturally increase economic activity. Furthermore, as a result of increased public transportation usage, there would be less smog and pollution being emitted. For extremely polluted cities, increasing the efficacy of public transportation is a clear route to decreasing car usage and greenhouse gas emissions.
