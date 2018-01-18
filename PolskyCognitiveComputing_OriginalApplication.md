@@ -2,6 +2,7 @@
 All files related to the reMapped transportation project
 
 Initial application document:
+
 **1.	What problem are you trying to solve OR the subject area you're interested in exploring? What kind of questions are getting asked?
 
   According to the World Bank, the world’s urban population was roughly 54% in 2014 and has been steadily increasing since the World Bank first began collecting data on urban population in 1960. As people become more concentrated in metropolitan areas, adaptive and efficient transportation becomes increasingly valuable. Cities must ensure that citizens do not spend excessive amounts of time in transit. 
