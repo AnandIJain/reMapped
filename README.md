@@ -7,5 +7,3 @@ Hello!
 This reMapped/ directory is meant to house all of my documents related to this project.
 The general concept of reMapped is to rework the University of Chicago shuttle system
 so that it is optimized for maximum ridership and minimum wait time. 
-
-To learn more, I would suggest reading my original application to the Polsky Cognitive Computing Challenge. 
