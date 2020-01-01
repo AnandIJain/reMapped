@@ -1,25 +1,27 @@
 import requests as r
-import json
-
 import api_key
-base_url = 'http://lapi.transitchicago.com/api/1.0/ttpositions.aspx?key=' + \
-    api_key.key + '&rt='
-url_suffix = '&outputType=JSON'
+import utils
+
+TRAIN_ROOT = 'http://lapi.transitchicago.com/api/1.0/'
+TRAIN_URL = TRAIN_ROOT + 'ttpositions.aspx?key=' + api_key.TRAIN_KEY + '&rt='
+
+JSON_SUFFIX = '&outputType=JSON'
+
 
 
 def make_request_url(routes:list, verbose=True):
+    # i think that for both trains and busses the maximum number of routes is 10
+
     route_str = ','.join(routes)
-    url = base_url + route_str + url_suffix
+    url = base_url + route_str + JSON_SUFFIX
+
     if verbose:
         print(url)
+
     return url
 
-def get_json(routes:list) -> dict:
-    url = make_request_url(routes, verbose=True)
-    j = r.get(url).text
-    return json.loads(j)
 
-def parse_data(data:dict):
+def parse_train_data(data:dict):
     """
 
     """
@@ -29,37 +31,33 @@ def parse_data(data:dict):
 
     all_trains = {}
     for i, route in enumerate(routes):
-        # print(f'{i}: {route}')
         route_trains = route.get('train')
         if route_trains:
             all_trains[route['@name']] = route_trains
 
     return all_trains
-    
-
-def select_features(trains:dict, keys:list):
-    # returns a dict where k = line color, v = list of train dicts
-    train_dicts = {}
-    for name, trains in trains.items():
-        # print(f'trains: {trains}')
-        # print(f'{name}: {type(trains)}')
-        try:
-            ts = [{k: t.get(k) for k in keys} for t in trains]
-        except AttributeError:
-            pass
-
-        train_dicts[name] = ts
-    return train_dicts
 
 
-def get_coords(routes):
-    json = get_json(routes)
-    trains = parse_data(json)
+def get_coords(routes:list, output='dict'):
+    # output is either 'df' or 'dict'
+    url = make_request_url(routes, verbose=True)
+    json = utils.grab(url)
+    trains = parse_train_data(json)
     features = ['lat', 'lon']
-    trains = select_features(trains, features)
+    trains = utils.select_features(trains, features)
+
+    if output == 'df':
+        trains = pd.DataFrame.from_dict(trains, orient='index')
+        
     return trains
 
-if __name__ == "__main__":
+
+def main():
     routes = ['red', 'blue', 'brn', 'g', 'org', 'p', 'pink', 'y']
     cs = get_coords(routes)
+    return cs
+
+
+if __name__ == "__main__":
+    cs = main()
     print(cs)

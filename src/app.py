@@ -1,4 +1,4 @@
-import trains
+import cta
 import api_key
 
 from flask import Flask
@@ -8,6 +8,6 @@ routes = ['red', 'blue', 'brn', 'g', 'org', 'p', 'pink', 'y']
 
 @app.route('/')
 def hello_world():
-    data = trains.get_coords(routes)
+    data = cta.get_coords(routes)
     print(data)
     return data
