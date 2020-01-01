@@ -15,7 +15,7 @@ def make_request_url(routes:list, verbose=True):
     return url
 
 def get_json(routes:list) -> dict:
-    url = make_request_url(routes)
+    url = make_request_url(routes, verbose=True)
     j = r.get(url).text
     return json.loads(j)
 
@@ -61,5 +61,5 @@ def get_coords(routes):
 
 if __name__ == "__main__":
     routes = ['red', 'blue', 'brn', 'g', 'org', 'p', 'pink', 'y']
-    get_coords(routes)
-
+    cs = get_coords(routes)
+    print(cs)
