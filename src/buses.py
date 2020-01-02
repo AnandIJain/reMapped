@@ -32,8 +32,8 @@ def main():
     print(f'routes: {data}')
     rts = [rt['rt'] for rt in data['bustime-response']['routes']]
     print(f'route_numbers : {rts}')
-    first_ten = rts[:9]    
-    vehicles = vehicles_from_routes(first_ten)
+    first_ten = rts[:10]
+    vehicles = vehicles_from_routes(rts)
     return vehicles
 
 
